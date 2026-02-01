@@ -1,49 +1,20 @@
-# PhysicsMaster - Class 11 & 12 Physics Platform
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## Overview
-This is a Next.js application for a video learning platform where students can buy courses (Class 11/12 Physics) or individual chapters. It features student and teacher dashboards, progress tracking, and Razorpay payment integration.
+# Run and deploy your AI Studio app
 
-## Tech Stack
-- **Frontend:** Next.js (React), Tailwind CSS
-- **Backend:** Next.js API Routes (Serverless)
-- **Database:** MongoDB (Mongoose)
-- **Authentication:** Custom JWT with Cookies
-- **Payments:** Razorpay
+This contains everything you need to run your app locally.
 
-## Setup
+View your app in AI Studio: https://ai.studio/apps/drive/1dp8B4tsn-TT-mSeywin6tmIQ40kbvr8Q
 
-1.  **Install Dependencies:**
-    ```bash
-    npm install
-    ```
+## Run Locally
 
-2.  **Environment Variables:**
-    Create a `.env.local` file in the root directory with the following variables:
+**Prerequisites:**  Node.js
 
-    ```env
-    MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/physicsmaster
-    JWT_SECRET=your_jwt_secret_key_here
-    TEACHER_SECRET=TEACHER_SECRET_123
-    
-    # Razorpay (Test Mode)
-    NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_test_...
-    RAZORPAY_KEY_ID=rzp_test_...
-    RAZORPAY_KEY_SECRET=your_razorpay_secret
-    ```
 
-3.  **Run Development Server:**
-    ```bash
-    npm run dev
-    ```
-
-4.  **Admin/Teacher Access:**
-    - Go to `/register`.
-    - Select "Teacher" role.
-    - Enter the `TEACHER_SECRET` (default: `TEACHER_SECRET_123`).
-    - Go to `/teacher/dashboard` to add chapters and videos.
-
-## Features implemented
-- **Authentication:** Student and Teacher login/registration.
-- **Teacher Panel:** Add chapters/videos, view student stats.
-- **Student Dashboard:** View courses, buy full course or chapters, watch videos, track progress.
-- **Payments:** Razorpay integration for unlocking content.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
